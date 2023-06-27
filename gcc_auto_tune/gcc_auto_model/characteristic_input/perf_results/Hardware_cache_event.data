@@ -1,0 +1,50 @@
+# started on Wed Jun 21 15:17:21 2023
+
+
+ Performance counter stats for '/home/loongson/benchmark/stream/stream':
+
+     2,559,997,496      L1-dcache-load-misses     #   43.85% of all L1-dcache hits    (9.90%)
+     5,838,349,444      L1-dcache-loads                                               (10.24%)
+                 0      L1-dcache-prefetch-misses                                     (10.54%)
+                 0      L1-dcache-prefetches                                          (10.86%)
+     2,799,502,478      L1-dcache-store-misses                                        (10.94%)
+     5,603,115,358      L1-dcache-stores                                              (10.90%)
+         1,114,724      L1-icache-load-misses     #    0.03% of all L1-icache hits    (10.89%)
+     4,054,970,125      L1-icache-loads                                               (10.82%)
+       460,459,227      LLC-load-misses           #   48.79% of all LL-cache hits     (10.80%)
+       943,683,965      LLC-loads                                                     (10.92%)
+       453,829,759      LLC-store-misses                                              (10.92%)
+       924,643,107      LLC-stores                                                    (10.90%)
+            28,103      branch-load-misses                                            (10.89%)
+     1,811,645,371      branch-loads                                                  (10.80%)
+           152,321      dTLB-load-misses          #    0.00% of all dTLB cache hits   (10.76%)
+     5,699,416,593      dTLB-loads                                                    (10.77%)
+            98,672      dTLB-store-misses                                             (10.73%)
+     5,762,939,742      dTLB-stores                                                   (10.79%)
+             1,206      iTLB-load-misses                                              (10.87%)
+     2,582,384,400      L1-dcache-load-misses     #   46.55% of all L1-dcache hits    (10.93%)
+     5,547,923,910      L1-dcache-loads                                               (10.98%)
+                 0      L1-dcache-prefetch-misses                                     (10.94%)
+                 0      L1-dcache-prefetches                                          (10.87%)
+     2,677,643,872      L1-dcache-store-misses                                        (10.80%)
+     5,742,831,092      L1-dcache-stores                                              (10.76%)
+            47,794      L1-icache-load-misses     #    0.00% of all L1-icache hits    (10.66%)
+     3,796,694,659      L1-icache-loads                                               (10.63%)
+       408,134,131      LLC-load-misses           #   43.32% of all LL-cache hits     (10.52%)
+       942,197,185      LLC-loads                                                     (10.42%)
+       412,284,930      LLC-store-misses                                              (10.29%)
+       957,626,807      LLC-stores                                                    (10.11%)
+             2,236      branch-load-misses                                            (9.97%)
+     2,052,139,110      branch-loads                                                  (9.77%)
+           123,611      dTLB-load-misses          #    0.00% of all dTLB cache hits   (9.70%)
+     6,432,640,871      dTLB-loads                                                    (9.63%)
+           148,863      dTLB-store-misses                                             (9.58%)
+     6,426,556,410      dTLB-stores                                                   (9.59%)
+               146      iTLB-load-misses                                              (9.62%)
+
+       1.447862336 seconds time elapsed
+
+      10.234188000 seconds user
+       0.456097000 seconds sys
+
+

@@ -1,0 +1,24 @@
+# started on Wed Jun 21 15:17:19 2023
+
+
+ Performance counter stats for '/home/loongson/benchmark/stream/stream':
+
+     2,002,086,169      branch-instructions                                           (32.97%)
+            78,911      branch-misses             #    0.00% of all branches          (33.06%)
+     2,691,076,198      cache-misses              #   47.501 % of all cache refs      (33.23%)
+     5,665,354,052      cache-references                                              (33.54%)
+    26,922,318,650      cpu-cycles                                                    (33.61%)
+    14,377,744,822      instructions              #    0.53  insn per cycle           (33.58%)
+     1,924,280,040      branch-instructions:u                                         (33.52%)
+             1,797      branch-misses:u           #    0.00% of all branches          (33.49%)
+     2,558,567,908      cache-misses:u            #   46.335 % of all cache refs      (33.42%)
+     5,521,863,644      cache-references:u                                            (33.37%)
+    25,766,484,038      cpu-cycles:u                                                  (33.25%)
+    14,115,011,265      instructions:u            #    0.55  insn per cycle           (32.97%)
+
+       1.450988341 seconds time elapsed
+
+      10.306299000 seconds user
+       0.483732000 seconds sys
+
+
