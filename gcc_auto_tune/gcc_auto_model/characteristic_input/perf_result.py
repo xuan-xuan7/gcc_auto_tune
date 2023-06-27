@@ -43,19 +43,21 @@ class result_handler():
     
     def vec_normalized(self) -> None:
         raw_vec = np.array(self.raw_vec)
-        self.vec.append((raw_vec - np.mean(raw_vec, axis=0)) / np.std(raw_vec, axis=0))
+        self.vec = (raw_vec - np.mean(raw_vec, axis=0)) / np.std(raw_vec, axis=0)
 
-    def get_vector(self) -> None:
+    def get_vector(self) -> list:
         self.get_raw_data()
         self.vec_normalized()
+        return self.vec
 
 
 if __name__ == "__main__":
-    counter = perf_counter()
+    vector = []
     for i in range(2):
-        counter.run_perf("/home/lslab/cpu2006-v1.1/run.sh")
+        counter = perf_counter()
+        counter.run_perf("/home/wyx/benchmark/stream/stream.o")
         handler = result_handler()
-        handler.get_vector()
-    print(handler.vec)
+        vector.append(handler.get_vector())
+    print(vector)
 
 

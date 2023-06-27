@@ -80,4 +80,4 @@ class perf_counter():
 
 if __name__ == "__main__":
     test = perf_counter()
-    test.run_perf("/home/loongson/benchmark/stream/stream")
+    test.run_perf("/home/wyx/benchmark/stream/stream.o")
