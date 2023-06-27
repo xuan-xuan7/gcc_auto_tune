@@ -6,6 +6,7 @@
 
 import re
 import numpy as np
+from perf_config import perf_counter
 
 
 class result_handler():
@@ -42,18 +43,19 @@ class result_handler():
     
     def vec_normalized(self) -> None:
         raw_vec = np.array(self.raw_vec)
-        self.vec = (raw_vec - np.mean(raw_vec, axis=0)) / np.std(raw_vec, axis=0)
+        self.vec.append((raw_vec - np.mean(raw_vec, axis=0)) / np.std(raw_vec, axis=0))
 
-    def get_vector(self) -> list:
+    def get_vector(self) -> None:
         self.get_raw_data()
         self.vec_normalized()
-        return self.vec
 
 
 if __name__ == "__main__":
-    handler = result_handler()
-    handler.get_vector()
-    np.set_printoptions(suppress=True)
+    counter = perf_counter()
+    for i in range(2):
+        counter.run_perf("/home/lslab/cpu2006-v1.1/run.sh")
+        handler = result_handler()
+        handler.get_vector()
     print(handler.vec)
 
 

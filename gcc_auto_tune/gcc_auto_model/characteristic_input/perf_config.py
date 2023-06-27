@@ -44,7 +44,7 @@ class perf_counter():
 
     def get_perf_cmd(self, run_cmd, key) -> list:
         file_name = key.replace(' ', '_')
-        output_file = "./oerf_results/" + file_name + ".data"
+        output_file = "./perf_results/" + file_name + ".data"
         cmd = ["sudo", "perf", "stat", "-o"]
         cmd.append(output_file)
         cmd.append("-e")
