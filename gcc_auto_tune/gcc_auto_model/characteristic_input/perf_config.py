@@ -11,9 +11,16 @@ import os
 class perf_counter():
 
     def __init__(self) -> None:
+        self.reset()
+        self.cnt = 0
         self.perf_list = None
         self.events = None
         self.get_perf_list()
+        self.event_extend()
+
+    def reset(self) -> None:
+        os.system("sudo rm ./perf_results/*")
+
     
     # get event from perf list
     def get_event(self, perf_list_raw) -> None:
@@ -44,7 +51,7 @@ class perf_counter():
 
     def get_perf_cmd(self, run_cmd, key) -> list:
         file_name = key.replace(' ', '_')
-        output_file = "./perf_results/" + file_name + ".data"
+        output_file = "./perf_results/" + file_name + '.' + str(self.cnt) + ".data"
         cmd = ["sudo", "perf", "stat", "-o"]
         cmd.append(output_file)
         cmd.append("-e")
@@ -67,7 +74,7 @@ class perf_counter():
 
     # run this perf counter by input command
     def run_perf(self, cmd) -> None:
-        self.event_extend()
+        self.cnt += 1
         run_cmd = cmd.split(' ')
         self.run_hardware_event(run_cmd)
         print("********** hardware event finish! **********")
@@ -80,4 +87,5 @@ class perf_counter():
 
 if __name__ == "__main__":
     test = perf_counter()
-    test.run_perf("/home/wyx/benchmark/stream/stream.o")
+    for i in range(5):
+        test.run_perf("/home/wyx/benchmark/stream/stream.o")

@@ -1,0 +1,34 @@
+# started on Wed Jun 28 19:39:53 2023
+
+
+ Performance counter stats for '/home/wyx/benchmark/stream/stream.o':
+
+    17,408,746,589      branch-instructions                                           (19.86%)
+         5,768,708      branch-misses             #    0.03% of all branches          (19.87%)
+   439,837,130,856      bus-cycles                                                    (19.92%)
+    32,764,990,173      cache-misses              #   73.545 % of all cache refs      (19.99%)
+    44,550,973,394      cache-references                                              (20.04%)
+   439,872,517,458      cpu-cycles                                                    (20.08%)
+   114,184,955,288      instructions              #    0.26  insn per cycle         
+                                                  #    3.85  stalled cycles per insn  (20.11%)
+   439,879,500,397      ref-cycles                                                    (20.12%)
+   439,900,188,019      stalled-cycles-backend    #  100.01% backend cycles idle      (20.12%)
+   439,903,611,756      stalled-cycles-frontend   #  100.01% frontend cycles idle     (20.10%)
+    16,988,217,077      branch-instructions:u                                         (20.08%)
+            66,364      branch-misses:u           #    0.00% of all branches          (20.04%)
+   405,486,427,042      bus-cycles:u                                                  (20.02%)
+    32,445,657,003      cache-misses:u            #   75.538 % of all cache refs      (20.02%)
+    42,952,738,361      cache-references:u                                            (19.98%)
+   405,843,426,616      cpu-cycles:u                                                  (19.96%)
+   110,725,572,796      instructions:u            #    0.27  insn per cycle         
+                                                  #    3.68  stalled cycles per insn  (19.95%)
+   406,482,861,955      ref-cycles:u                                                  (19.93%)
+   406,936,588,807      stalled-cycles-backend:u  #  100.27% backend cycles idle      (19.92%)
+   407,522,035,270      stalled-cycles-frontend:u #  100.41% frontend cycles idle     (19.89%)
+
+       8.845466833 seconds time elapsed
+
+     169.478004000 seconds user
+       8.366858000 seconds sys
+
+
