@@ -1,0 +1,50 @@
+# started on Mon Jul 10 18:33:06 2023
+
+
+ Performance counter stats for './__run 1':
+
+       187,273,195      L1-dcache-load-misses     #    0.26% of all L1-dcache hits    (10.44%)
+    71,698,854,714      L1-dcache-loads                                               (10.47%)
+                 0      L1-dcache-prefetch-misses                                     (10.49%)
+                 0      L1-dcache-prefetches                                          (10.51%)
+       185,239,332      L1-dcache-store-misses                                        (10.50%)
+    71,808,468,537      L1-dcache-stores                                              (10.46%)
+        40,111,735      L1-icache-load-misses     #    0.19% of all L1-icache hits    (10.50%)
+    21,574,431,887      L1-icache-loads                                               (10.52%)
+             7,751      LLC-load-misses           #    0.03% of all LL-cache hits     (10.57%)
+        24,612,824      LLC-loads                                                     (10.59%)
+             4,091      LLC-store-misses                                              (10.56%)
+        24,497,511      LLC-stores                                                    (10.55%)
+        78,808,132      branch-load-misses                                            (10.48%)
+     3,631,188,219      branch-loads                                                  (10.49%)
+           154,428      dTLB-load-misses          #    0.00% of all dTLB cache hits   (10.53%)
+    72,097,854,611      dTLB-loads                                                    (10.51%)
+           153,326      dTLB-store-misses                                             (10.56%)
+    72,244,596,893      dTLB-stores                                                   (10.54%)
+             5,134      iTLB-load-misses                                              (10.52%)
+       170,863,763      L1-dcache-load-misses     #    0.24% of all L1-dcache hits    (10.56%)
+    71,871,895,899      L1-dcache-loads                                               (10.53%)
+                 0      L1-dcache-prefetch-misses                                     (10.54%)
+                 0      L1-dcache-prefetches                                          (10.53%)
+       170,870,190      L1-dcache-store-misses                                        (10.53%)
+    71,677,815,260      L1-dcache-stores                                              (10.51%)
+        29,869,364      L1-icache-load-misses     #    0.14% of all L1-icache hits    (10.53%)
+    21,526,623,144      L1-icache-loads                                               (10.52%)
+               218      LLC-load-misses           #    0.00% of all LL-cache hits     (10.53%)
+        16,779,702      LLC-loads                                                     (10.59%)
+               236      LLC-store-misses                                              (10.58%)
+        16,461,903      LLC-stores                                                    (10.59%)
+        77,677,412      branch-load-misses                                            (10.57%)
+     3,627,772,713      branch-loads                                                  (10.56%)
+           137,095      dTLB-load-misses          #    0.00% of all dTLB cache hits   (10.56%)
+    72,094,002,806      dTLB-loads                                                    (10.54%)
+           135,218      dTLB-store-misses                                             (10.52%)
+    72,386,942,968      dTLB-stores                                                   (10.47%)
+             2,629      iTLB-load-misses                                              (10.42%)
+
+      15.240838076 seconds time elapsed
+
+      14.370369000 seconds user
+       0.051944000 seconds sys
+
+

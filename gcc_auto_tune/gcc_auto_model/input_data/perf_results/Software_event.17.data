@@ -1,0 +1,34 @@
+# started on Mon Jul 10 18:43:11 2023
+
+
+ Performance counter stats for './__run 1':
+
+                 0      alignment-faults          #    0.000 K/sec                  
+                 0      bpf-output                #    0.000 K/sec                  
+                48      context-switches          #    0.007 K/sec                  
+          6,855.19 msec cpu-clock                 #    0.999 CPUs utilized          
+                 0      cpu-migrations            #    0.000 K/sec                  
+                 0      dummy                     #    0.000 K/sec                  
+                 0      emulation-faults          #    0.000 K/sec                  
+                 0      major-faults              #    0.000 K/sec                  
+                 0      minor-faults              #    0.000 K/sec                  
+               287      page-faults               #    0.042 K/sec                  
+          6,855.20 msec task-clock                #    0.999 CPUs utilized          
+                 0      alignment-faults:u        #    0.000 K/sec                  
+                 0      bpf-output:u              #    0.000 K/sec                  
+                 0      context-switches:u        #    0.000 K/sec                  
+          6,855.18 msec cpu-clock:u               #    0.999 CPUs utilized          
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+                 0      dummy:u                   #    0.000 K/sec                  
+                 0      emulation-faults:u        #    0.000 K/sec                  
+                 0      major-faults:u            #    0.000 K/sec                  
+                 0      minor-faults:u            #    0.000 K/sec                  
+               282      page-faults:u             #    0.041 K/sec                  
+          6,855.20 msec task-clock:u              #    0.999 CPUs utilized          
+
+       6.864451048 seconds time elapsed
+
+       6.855358000 seconds user
+       0.000000000 seconds sys
+
+

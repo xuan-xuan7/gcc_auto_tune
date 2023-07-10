@@ -1,0 +1,24 @@
+# started on Mon Jul 10 19:05:19 2023
+
+
+ Performance counter stats for './__run 1':
+
+     5,548,635,036      branch-instructions                                           (33.26%)
+        83,602,551      branch-misses             #    1.51% of all branches          (33.18%)
+       165,550,312      cache-misses              #    0.146 % of all cache refs      (33.18%)
+   113,582,937,063      cache-references                                              (33.23%)
+    59,089,503,026      cpu-cycles                                                    (33.22%)
+   147,473,455,660      instructions              #    2.50  insn per cycle           (33.25%)
+     3,985,578,456      branch-instructions:u                                         (33.18%)
+           555,956      branch-misses:u           #    0.01% of all branches          (33.26%)
+        15,560,067      cache-misses:u            #    0.014 % of all cache refs      (33.52%)
+   110,128,175,044      cache-references:u                                            (33.57%)
+    49,686,078,092      cpu-cycles:u                                                  (33.64%)
+   138,823,823,902      instructions:u            #    2.79  insn per cycle           (33.52%)
+
+      24.874708375 seconds time elapsed
+
+      19.741506000 seconds user
+       3.955896000 seconds sys
+
+

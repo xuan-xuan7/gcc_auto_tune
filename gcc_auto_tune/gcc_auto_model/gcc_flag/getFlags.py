@@ -4,7 +4,6 @@ from typing import List
 import os
 import re
 
-#logger = logging.getLogger(__name__)
 
 class Option:
     """An Option is either a command line optimization setting or a parameter.
@@ -71,6 +70,8 @@ class GccFlagAlignOption(Option):
 
     def __repr__(self) -> str:
         return f"<ccFlagAlignOption name={self.name}, values=[{','.join(self.values)}]>"
+
+
 class GccFlagOption(Option):
     """An ordinary :code:`-f` flag.
 
